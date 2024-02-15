@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_homeFragment_to_dataFragment"
             app:destination="@id/dataFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
     </fragment>
     <fragment
         android:id="@+id/dataFragment"
@@ -20,6 +23,15 @@
         tools:layout="@layout/fragment_data" >
         <action
             android:id="@+id/action_dataFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.navigationsxml.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
 </navigation>
